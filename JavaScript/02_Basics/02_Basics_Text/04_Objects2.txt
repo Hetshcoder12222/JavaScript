@@ -1,0 +1,38 @@
+|‾‾‾‾ ‾‾|‾‾ |\  | |‾‾‾‾‾ |     |‾‾‾‾ ‾‾‾|‾‾‾ |‾‾‾‾‾| |\  |    /  |‾‾‾‾‾ |‾‾‾‾‾| |\  | |‾‾‾‾ ‾‾‾|‾‾‾ |‾‾‾|  |     | |‾‾‾‾‾ ‾‾‾|‾‾‾ |‾‾‾‾‾| |‾‾‾| 
+ ‾‾‾|   |   | \ | |  ‾‾| |     |———     |    |     | | \ |   /   |      |     | | \ |  ‾‾‾|    |    |‾‾‾\  |     | |         |    |     | |‾‾‾\ 
+|___| __|__ |  \| |____| |____ |____    |    |_____| |  \|  /    |_____ |_____| |  \| |___|    |    |    \ |_____| |_____    |    |_____| |    \
+
+Constructor 1. Entering a Object (Only for Learning){Skipped}
+
+
+Constructor 2. Entering a Object in a Object in a... (Only for Learning){Skipped}
+
+
+Constructor 3. ?
+
+    "?" is Used for knowing a thing that is or not.
+    Example:
+        const CValue2 = {
+        CValue1: "CValue1",
+        CValue2: {
+            CValue1: "CValue1",
+                CValue2: {
+                CValue1: "CValue1",
+                    CValue2: {
+                    CValue1: "CValue1",
+                }
+            }
+        }
+        }
+
+        console.log("", CValue2.CValue2?.CValue2);     // Output: 3 Undefined and 1 Output
+        console.log("", CValue2.CValue1000?.CValue2);  // Output: 4 Undefined and 0 Output
+
+
+Constructor 4. Joining like a Array (Only for Learning){Skipped}
+
+
+Constructor 5. Joining a Array with a Object (Only for Learning){Skipped}
+
+
+Constructor 6. Does it is Existed (Only for Learning){Skipped}

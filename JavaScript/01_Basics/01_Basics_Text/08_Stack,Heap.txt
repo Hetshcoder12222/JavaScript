@@ -1,0 +1,34 @@
+Stack - Primitive
+Heap - Reference
+
+
+
+🧱 Stack
+The stack is a memory structure used for storing primitive values and function execution context (like local variables and call frames).
+
+Stores:
+
+Primitive data types (number, string, boolean, null, undefined, symbol, bigint)
+Function calls and local variables
+Memory allocation: Automatically managed and fast (LIFO – Last In, First Out)
+
+
+
+
+🗃️ Heap
+The heap is a memory structure used for storing non-primitive (reference) types, such as objects, arrays, and functions.
+
+Stores:
+
+Objects, Arrays, and Functions
+Memory allocation: Dynamically managed; slower than stack
+
+
+
+
+| Feature      | Stack                    | Heap                       |
+| ------------ | ------------------------ | -------------------------- |
+| Used for     | Primitives, call context | Objects, arrays, functions |
+| Access speed | Fast                     | Slower                     |
+| Memory size  | Small                    | Large                      |
+| Managed by   | JavaScript engine        | JavaScript engine          |

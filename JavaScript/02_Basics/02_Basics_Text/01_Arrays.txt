@@ -1,0 +1,163 @@
+🔹Shallow Copy: https://developer.mozilla.org/en-US/docs/Glossary/Shallow_copy
+
+    Definition: 
+
+    A shallow copy copies an object’s top-level properties only. If the property is a primitive (like a number, string, or boolean), its value is copied.
+    If the property is a reference type (like an object or array), the reference is copied, not the actual object.
+
+    Key Point: 
+
+    Changes to nested objects in the copied object will affect the original object.
+
+
+🔸 Deep Copy: https://developer.mozilla.org/en-US/docs/Glossary/Deep_copy
+
+    Definition: 
+
+    A deep copy copies all levels of the object. It creates completely independent clones of nested objects.
+
+    Key Point: 
+
+    Changes to nested objects in the copied object do NOT affect the original object.
+
+
+
+1.
+
+    Definition: 
+
+    The .push() method is used to add one or more elements to the end of an array.
+    It modifies the original array and returns the new length of the array.
+
+    Key Points:
+
+    Adds elements to the end of an array.
+    Returns the new length of the array.
+    Changes the original array.
+
+     _____________________________________________________
+    | Feature         | Details                           |
+    | --------------- | --------------------------------- |
+    | Purpose         | Add elements to array's end       |
+    | Returns         | New array length                  |
+    | Modifies Array  | Yes                               |
+    | Common Use Case | Stack (Last In, First Out - LIFO) |
+     ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+
+
+2.
+
+    Definition
+
+    The .pop() method is used to remove the last element from an array and return that element. This method changes the length of the array.
+
+    Key Points: 
+
+    Removes the last element from the array.
+    Returns the removed element.
+    If the array is empty, it returns undefined.
+    It modifies the original array.
+
+
+3.
+
+    Definition: 
+
+    The .unshift() method adds one or more elements to the beginning of an array and returns the new length of the array.
+
+    Returns: 
+
+    The new length of the array.
+
+    Key Points: 
+
+    It modifies the original array.
+    It is the opposite of .shift(), which removes the first element.
+    It is similar to .push(), but adds elements at the start instead of the end.
+
+
+4.
+
+    Definition:
+
+    The .shift() method is used to remove the first element from an array and return that removed element. This method changes the original array by reducing its length by one.
+
+    Key Points: 
+
+    Removes the first element from an array.
+    Returns the removed element.
+    Changes (mutates) the original array.
+    If the array is empty, it returns undefined.
+
+     ____________________________________________________________________________________________
+    | Initial Array                  | Operation        | Resulting Array       | Returned Value |
+    | ------------------------------ | ---------------- | --------------------- | -------------- |
+    | \['Apple', 'Banana', 'Cherry'] | `fruits.shift()` | \['Banana', 'Cherry'] | 'Apple'        |
+     ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+    
+
+
+
+1. .includes(Learned in 09_Strings){Skipped}
+
+
+2 .indexOf(Learned in 09_Strings){Skipped}
+
+
+3.
+
+    Definition: 
+
+    The .join() method is used to combine all the elements of an array into a single string.
+    You can specify a separator between each element.
+
+    Key Points: 
+
+    Works only on arrays.
+    Does not modify the original array.
+    Can create clean strings from array elements quickly.
+
+
+4.
+
+    Definition: 
+
+    The .slice() method is used to extract a portion of an array or string and return it as a new array or string, without modifying the original.
+
+    📚 Parameters: 
+
+    start (optional):
+    The index at which to begin extraction. If omitted, defaults to 0. If negative, counts from the end.
+    end (optional):
+    The index before which to end extraction. The element at this index is not included. If omitted, extracts till the end. If negative, counts from the end.
+
+    ✅ Key Points: 
+
+    Does not change the original array or string.
+    Returns a new array or string.
+
+
+5.
+    
+    Definition: 
+    
+    The .splice() method is used to add, remove, or replace elements in an array.
+    
+     __________________________________________________________________________
+    | Parameter     | Description                                              |
+    | ------------- | -------------------------------------------------------- |
+    | `start`       | Index at which to start changing the array.              |
+    | `deleteCount` | Number of elements to remove from the start index.       |
+    | `item1, ...`  | Optional. Elements to add starting from the start index. |
+     ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+
+    Returns: 
+
+    An array containing the removed elements.
+    If no elements are removed, it returns an empty array.
+
+    Key Points: 
+
+    .splice() modifies the original array.
+    You can remove, add, or replace elements in a single method call.
+    The method returns an array of the deleted elements.

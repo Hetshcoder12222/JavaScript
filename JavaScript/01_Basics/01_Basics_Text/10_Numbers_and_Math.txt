@@ -1,0 +1,357 @@
+.toExponential
+.toFixed
+.toLocaleString
+.toPrecision
+.toString
+.valueOf
+
+<a href="10_Numbers_and_Math.png">10_Numbers_and_Math.png<a>
+         ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾  ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+<a href="10_Numbers_and_Math.mp4">10_Numbers_and_Math.mp4<a>
+         ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾  ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>
+
+
+1.
+
+    {
+    const Value1 = 100
+    const Value2 = new Number(100)
+
+    console.log(Value1);
+    console.log(Value2);
+    } - ❎ ✕
+
+    {
+    const Value1 = 100
+    console.log(Value1);
+
+    const Value2 = new Number(100)
+    console.log(Value2);
+    } - ✅ ✓
+
+
+2. .length
+
+    Definition: 
+
+    In JavaScript, the .length property is used to determine the number of elements in an array or the number of characters in a string.
+
+    The .length property returns the total number of characters in the Number, including Points(.)
+
+     _____________________________________________
+    | Data Type | Purpose of `.length`            |
+    | --------- | ------------------------------- |
+    | String    | Counts the number of characters |
+    | Array     | Counts the number of elements   |
+     ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+
+
+3. .toString
+
+    Definition: 
+
+    The .toString() method in JavaScript is used to convert an object, number, array, or other data types to their string representation.
+
+    ✅ Key Points:
+
+    It does not change the original value.
+    It returns a string version of the value.
+    Commonly used with numbers, arrays, and objects.
+
+    ✅ Use Cases: 
+
+     ______________________________________________________________________________
+    | Data Type | Example              | Result                                    |
+    | --------- | -------------------- | ----------------------------------------- |
+    | Number    | `123.toString()`     | `"123"`                                   |
+    | Boolean   | `(true).toString()`  | `"true"`                                  |
+    | Array     | `[1,2,3].toString()` | `"1,2,3"`                                 |
+    | Object    | `({a:1}).toString()` | `"[object Object]"` (default for objects) |
+     ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+
+    ✅ Note:
+
+    For objects, unless you override the .toString() method, it usually returns "[object Object]".
+
+
+4. .toFixed
+
+    Definition: 
+
+    The .toFixed() method in JavaScript formats a number using fixed-point notation.It returns a string representing the number with a specified number of digits after the decimal point.
+
+    digits (optional):
+
+    The number of digits to appear after the decimal point.Default is 0.
+
+    Key Points:
+
+    It rounds the number as necessary.
+    It always returns a string, not a number.
+    If digits is not provided, it defaults to 0.
+
+
+5. .toPrecision
+
+    Definition: 
+
+    The .toPrecision() method is used to format a number to a specified total number of significant digits.
+    precision: An integer that specifies the total number of significant digits (must be between 1 and 100).
+
+    Key Points:
+
+    It returns a string.
+    The result may be in fixed-point or exponential notation depending on the precision and the number's size.
+    It rounds the number if necessary to match the specified precision.
+
+
+6. .toLocaleString
+
+    Definition: 
+
+    The .toLocaleString() method in JavaScript converts a number, date, or other object to a string, using locale-specific formatting.
+    It allows you to display numbers, dates, and times according to the conventions of a specific language or region.
+
+    locales (optional): A string or array of strings that specify the locale (e.g. "en-US", "hi-IN").
+    options (optional): An object to customize the formatting (style, currency, time zone, etc.).
+
+     ____________________________________________________________________
+    | Feature             | Description                                  |
+    | ------------------- | -------------------------------------------- |
+    | Purpose             | Formats numbers and dates based on locale    |
+    | Optional Parameters | Locales and formatting options               |
+    | Common Use Cases    | Currency, date-time, regional number display |
+     ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+
+
+
+←————————————————————→ Math{In JavaScript} ←————————————————————→
+
+.E
+.LN10
+.LN2
+.LOG10E
+.LOG2E
+.PI
+.SQRT1_2
+.SQRT2
+.abs
+.acos
+.acosh
+.asin
+.asinh
+.atan
+.atan2
+.atanh
+.cbrt
+.ceil
+.clz32
+.COS
+.cosh
+.exp
+.expm1
+.floor
+.fround
+.hypot
+.imul
+.log
+.log10
+.log1p
+.log2
+.max
+.min
+.pow
+.random
+.round
+.sign
+.sin
+.sinh
+.sqrt
+.tan
+.tanh
+.trunc
+
+7. .abs(absolute value)
+
+    Definition: 
+
+    In JavaScript, the .abs() method is used to return the absolute value of a number. The absolute value of a number is its non-negative value, meaning it is always positive or zero.
+    The Posiitve value will be Positive.
+    The Negative value will be Positive.
+
+    Shown in the "10_Numbers_and_Math.png".
+
+    Key Points:
+
+    Math.abs() is a static method of the Math object, so it is always called as Math.abs().
+    It converts negative numbers to positive.
+    If the input is already positive or zero, it returns the input unchanged.
+    If the argument is not a number, JavaScript tries to convert it. If it fails, the result will be NaN.
+
+
+8. .round
+    
+    Definition: 
+    
+    In JavaScript, the .round() method is used to round a number to the nearest integer.
+    
+    How it works: 
+    
+    If the decimal part is 0.5 or higher, the number is rounded up.
+    If the decimal part is less than 0.5, the number is rounded down.
+    
+    Key Points: 
+    
+    It is part of the Math object (Math.round).
+    It does not change the original number; it returns a new rounded number.
+    It always returns an integer.
+
+
+9. .ceil
+
+    Definition: 
+
+    The Math.ceil() method in JavaScript rounds a number up to the nearest integer.
+    It always rounds toward positive infinity, no matter how small the decimal part is.
+
+    Key Points: 
+
+    It rounds up to the next largest integer.
+    Works with positive and negative numbers.
+    It is a static method of the Math object, so it is always called like Math.ceil() and not as a method on a number.
+
+
+10. .floor
+
+    Definition: 
+
+    The Math.floor() method rounds a number down to the nearest integer.
+    It always returns the largest integer less than or equal to the given number.
+
+    Key Points: 
+
+    It always rounds towards negative infinity.
+    Works with both positive and negative numbers.
+    Part of the built-in Math object in JavaScript.
+
+
+8, 9, 10.(Merge)
+
+    Difference: 
+
+     ___________________________________________________________________________________________
+    | Method          | Description                                | Example           | Result |
+    | --------------- | ------------------------------------------ | ----------------- | ------ |
+    | `Math.floor(x)` | Rounds **down** to the nearest integer     | `Math.floor(4.7)` | `4`    |
+    | `Math.ceil(x)`  | Rounds **up** to the nearest integer       | `Math.ceil(4.3)`  | `5`    |
+    | `Math.round(x)` | Rounds to the **nearest** integer          | `Math.round(4.5)` | `5`    |
+    |                 | (If decimal is `.5` or higher → rounds up) | `Math.round(4.4)` | `4`    |
+     ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+     
+    Quick Explanation: 
+
+    Math.floor() → Always goes down to the lower integer.
+    Math.ceil() → Always goes up to the higher integer.
+    Math.round() → Goes nearest:
+                    .5 and above → rounds up
+                    Less than .5 → rounds down
+
+
+    Number:   4.0    4.1    4.2    4.3    4.4    4.5    4.6    4.7    4.8    4.9    5.0
+
+    .floor →   4      4      4      4      4      4      4      4      4      4      5
+    .ceil  →   5      5      5      5      5      5      5      5      5      5      5
+    .round →   4      4      4      4      4      5      5      5      5      5      5
+
+    
+    Meanings:
+     
+    ceil = Celling(Above your head)
+    floor = Floor(Below your feet)
+    round = around
+
+
+11. .min
+
+    Definition: 
+
+    Math.min() is a static method of the Math object that returns the smallest (minimum) value among the numbers provided as arguments.
+
+    📌 Parameters: 
+
+    One or more numeric values to compare.
+
+    📤 Return Value: 
+
+    Returns the smallest number from the given numbers.
+    If no arguments are provided, it returns Infinity.
+    If any argument is NaN, it returns NaN.
+
+    🚀 Quick Notes: 
+
+    You can use Math.min to find the minimum value in an array by combining it with the spread operator:
+
+
+12. .max
+
+    Definition: 
+
+    In JavaScript, the .max method is used with the Math object to find the largest number among the provided arguments.
+
+    📤 Returns: 
+
+    The largest number among the provided arguments.
+    If no arguments are provided, it returns -Infinity.
+
+    🚀 Key Points: 
+
+    It does not work on arrays directly. You need to spread the array:
+
+
+11, 12.(Merge)
+
+     ________________________________________________________________________________________________________________
+    | Feature                      | `Math.min()`                           | `Math.max()`                           |
+    | ---------------------------- | -------------------------------------- | -------------------------------------- |
+    | **Purpose**                  | Returns the **smallest** value         | Returns the **largest** value          |
+    | **Syntax**                   | `Math.min(value1, value2, ... valueN)` | `Math.max(value1, value2, ... valueN)` |
+    | **Example**                  | `Math.min(2, 5, 1, 9)` returns `1`     | `Math.max(2, 5, 1, 9)` returns `9`     |
+    | **Return with no arguments** | Returns `Infinity`                     | Returns `-Infinity`                    |
+    | **Use Case**                 | Find minimum in a list of numbers      | Find maximum in a list of numbers      |
+     ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+
+    Meanings: 
+
+    min = Minimum
+    max = Maximum
+
+
+13. .random
+
+    13.1.  0 - 1   ↘
+                     >———————————————————————————————→{ 1 × 100 = 100 }
+    13.2.  0 - 100 ↗
+
+
+    Definition: 
+
+    In JavaScript, Math.random() is a method that returns a pseudo-random floating-point number between 0 (inclusive) and 1 (exclusive).
+
+    Key Points: 
+
+    Always returns a number greater than or equal to 0 and less than 1.
+    It does not take any arguments.
+    It is commonly used to generate random numbers in a range.
+
+     _________________________________________
+    | Property    | Value                     |
+    | ----------- | ------------------------- |
+    | Full Name   | `Math.random()`           |
+    | Return Type | Number (float)            |
+    | Range       | 0 ≤ result < 1            |
+    | Parameters  | None                      |
+    | Use Case    | Generating random numbers |
+     ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+
+

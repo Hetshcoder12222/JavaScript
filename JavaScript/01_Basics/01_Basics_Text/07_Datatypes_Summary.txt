@@ -1,0 +1,69 @@
+Primitive and Non-Primitive
+
+Primitive
+7 Types of Primitive
+
+
+1.String: 
+    Represents textual data. Strings are sequences of characters enclosed in single quotes ('') or double quotes ("").
+
+2.Number: 
+    Represents both integer and floating-point numbers. JavaScript numbers are typically stored as double-precision 64-bit binary format IEEE 754.
+
+3.Boolean: 
+    Represents a logical entity and can only have one of two values: 
+    true or false. Booleans are commonly used for conditional logic.
+
+4.Undefined: 
+    Indicates that a variable has been declared but has not yet been assigned a value. It is also the default return value for functions that do not explicitly return anything. 
+
+5.Null: 
+    Represents the intentional absence of any object value. It is a primitive value that signifies "no value" or "empty."
+
+6.Symbol: 
+    Introduced in ES6, Symbol is a unique and immutable primitive value. Symbols are primarily used to create unique property keys for objects, preventing naming collisions. 
+
+7.BigInt: 
+    A data type introduced to represent whole numbers larger than 2^53 - 1, which is the maximum integer value that the standard Number type can reliably represent. BigInt values are created by appending n to an integer literal or by using the BigInt() constructor.
+
+
+
+Non-Primitive(reference)
+10 Commonly used Datatypes
+
+
+1.Object: 
+    A collection of key-value pairs.
+
+2.Array: 
+    A special type of object for storing ordered lists.
+
+3.Function: 
+    A reusable block of code.
+
+4.Date: 
+    Represents dates and times.
+
+5.RegExp: 
+    Regular expressions for pattern matching in strings.
+
+5.Map: 
+    A collection of key-value pairs with keys of any type.
+
+7.Set: 
+    A collection of unique values.
+
+7.WeakMap: 
+    Like Map, but keys must be objects and are weakly held.
+
+8.WeakMap: 
+    Like Map, but keys must be objects and are weakly held.
+
+9.WeakSet: 
+    Like Set, but holds only objects and doesn't prevent garbage collection.
+
+10.Error: 
+    Used to represent runtime errors.
+
+What is Symbol?
+    A symbol is a Datatype that the all things are same but the result will be different.

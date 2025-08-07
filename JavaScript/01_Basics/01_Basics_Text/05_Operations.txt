@@ -1,0 +1,78 @@
+Prefix and Postfix:
+
+
+The ++ operator is overloaded for two types of operands: Number and BigInt. It first coerces the operand to a numeric value and tests the type of it. It performs BigInt increment if the operand becomes a BigInt; otherwise, it performs number increment.
+
+If used postfix, with operator after operand (for example, x++), the increment operator increments and returns the value before incrementing.
+
+If used prefix, with operator before operand (for example, ++x), the increment operator increments and returns the value after incrementing.
+
+The increment operator can only be applied on operands that are references (variables and object properties; i.e., valid assignment targets). ++x itself evaluates to a value, not a reference, so you cannot chain multiple increment operators together.
+
+
+ ...................................................................
+|Expression          Meaning          When is the increment applied?|
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|
+|x++	                Postfix	         After the value is used    |
+|++x	                Prefix	         Before the value is used   |
+ ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+
+Prefix
+
+let x = 3;
+const y  = ++x;
+
+
+Prefix is used for value is incremented first, then used.
+
+Example:
+
+    x = 3 
+    y = ++x
+
+1.The value of x is 3.
+2.The value of y is ++x.
+3.So add 1 to x,
+4.And Insert the value of x into y
+
+Output:
+
+    x:4, y:3
+
+console.log(`x:${x}, y:${y}`);
+// Expected output: "x:4, y:3"
+
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+let a = 3;
+const b = ++a;
+
+
+Postfix is used for value is used first, then incremented.
+
+Example:
+
+    a = 3 
+    b = a++
+
+1.The value of a is 3.
+2.The value of b is a++.
+3.So add 1 to a,
+4.And the value of b is a++ so the value of b is 1 + 3 = 4
+
+Output:
+
+    a:4, b:4
+
+console.log(`a:${a}, b:${b}`);
+// Expected output: "a:4, b:4"
+
+
+
+
+If want to add to 2 so do:
+
+    +=2 // Postfix
+    -=2 // Postfix
+
+    2+= // Prefix
+    2-= // Prefix

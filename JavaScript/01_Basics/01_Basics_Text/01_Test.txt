@@ -1,0 +1,18 @@
+console.log("Udhnawalan")
+
+// Difference of txt file and js file:
+
+// Text File (.txt):
+
+// Content: Stores plain text — letters, numbers, symbols — without any structure for code.
+// File Extension: .txt.
+// Uses: Notes, messages, raw data, configuration files, or even logs.
+// Execution: It’s not meant to be directly “executable” by a browser or a scripting engine — it's just raw text.
+
+
+//  JavaScript File (.js):
+
+// Content: Stores JavaScript code — a scripting or programming language used to add functionality to web pages or applications.
+// File Extension: .js.
+// Uses: Implementing functionality, adding interactivity, accessing and manipulating HTML elements, performing computations, etc.
+// Execution: Executable by a JavaScript engine (like your browser’s or Node.js).

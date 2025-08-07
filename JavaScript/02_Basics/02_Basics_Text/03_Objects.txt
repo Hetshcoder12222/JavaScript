@@ -1,0 +1,74 @@
+There are two types of Objects:
+
+1. Literal
+    Definition: 
+    A literal object in JavaScript is the simplest and most direct way to create an object using curly braces {} with key-value pairs.
+    It’s called a literal because you define the object literally in the code, without using constructors or classes.
+2. Constructor
+	
+    Definition: 
+    A constructor object in JavaScript refers to an object created using a constructor function.
+
+
+
+|     ‾‾|‾‾ ‾‾‾|‾‾‾  |‾‾‾‾ |‾‾‾|  |‾‾‾‾| |     |‾‾‾‾
+|       |      |     |———  |‾‾‾\  |————| |      ‾‾‾|
+|____ __|__    |     |____ |    \ |    | |____ ____|
+
+
+    Literals 1.
+
+        const LValue1 = {
+            LValue1: "LValue1"
+        }
+
+        const AValue1 = [LValue1]
+
+        Array   -  Only Values can Define
+        Objects -  Both Values & Keyword can Define
+
+
+    Literal 2. String value that cannot be with "." / full stop (Only for Learning){Skipped}
+
+
+    Literal 3. Symbol to Object (Only for Learning){Skipped}
+
+
+    Literal 4. Representing Symbol (Only for Learning){Skipped}
+
+
+    Literal 5.
+
+        Definition: 
+
+        The Object.freeze() method freezes an object, meaning:
+        It prevents new properties from being added.
+        It prevents existing properties from being removed.
+        It prevents existing properties from being changed (both values and descriptors).
+        In other words, a frozen object becomes immutable (cannot be modified in any way).
+
+        Key Points: 
+
+        Object.freeze() is shallow:
+        It only freezes the first-level properties.
+        If the object contains nested objects, the nested objects are not frozen.
+        To deep freeze an object, you would need to recursively freeze all nested objects.
+        It returns the frozen object.
+
+
+    Literal 6.
+    
+        Definition: 
+    
+        There is no built-in .greeting method or property in JavaScript. However, .greeting is often seen as a custom property on an object created by the developer. Here's a basic example to illustrate:
+    
+        ✅ Explanation: 
+    
+        person is an object.
+        .greeting is a custom property of that object.
+        Accessing person.greeting returns the string value stored in that property.
+    
+        Summary: 
+    
+        .greeting is not built-in to JavaScript.
+        It's a user-defined property commonly used in objects to represent a message or method for greeting.

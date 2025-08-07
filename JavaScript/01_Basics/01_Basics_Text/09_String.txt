@@ -1,0 +1,249 @@
+.at
+.charAt
+.charCodeAt
+.codePointAt
+.concat
+.endsWith
+.includes
+.indexOf
+.lastIndexOf
+.length
+.localeCompare
+.match
+.matchAll
+.normalize
+.padEnd
+.padStart
+.repeat
+.replace
+.replaceAll
+.search
+.slice
+.split
+.startsWith
+.substring
+.toLocaleLowerCase
+.toLocaleUpperCase
+.toLowerCase
+.toString
+.toUpperCase
+.trim
+.trimEnd
+.trimStart
+.valueOf
+
+<a href="09_String.png">09_String.png<a>
+         ‾‾‾‾‾‾‾‾‾‾‾‾‾  ‾‾‾‾‾‾‾‾‾‾‾‾‾
+<a href="09_String.mp4">09_String.mp4<a>
+         ‾‾‾‾‾‾‾‾‾‾‾‾‾  ‾‾‾‾‾‾‾‾‾‾‾‾‾
+
+
+1.
+
+    This is not a modern code.
+    We need a modern code.
+    We are not doing old code.
+
+
+2.
+
+    V: 0
+    a: 1
+    l: 2
+    u: 3
+    e: 4
+    1: 5
+
+
+3.
+
+    .length is not a method; it's a property.
+
+    For arrays, changing .length can truncate or expand the array.
+    The .length property returns the size or count of elements, characters, or parameters, depending on the type of value it is used with.
+    It's often used to check size before looping or validating data.
+
+     _______________________________________________________________________________________________________________________
+    | Type         | Meaning of `.length`                                                   | Example                       |
+    | ------------ | ---------------------------------------------------------------------- | ----------------------------- |
+    | **String**   | Number of characters                                                   | `"hello".length → 5`          |
+    | **Array**    | Number of elements                                                     | `[1, 2, 3].length → 3`        |
+    | **Function** | Number of declared parameters                                          | `function(x, y){}.length → 2` |
+    | **Object**   | No default `.length`; use `Object.keys(obj).length` for property count | -                             |
+     ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+
+
+4.
+
+    Definition: 
+
+    .toUpperCase() is a string method in JavaScript that returns a new string with all the alphabetic characters converted to uppercase. It does not change the original string (strings are immutable in JavaScript).
+
+    Use Case:
+
+    Often used for:
+    Standardizing user input
+    Case-insensitive comparisons
+    Formatting output
+
+
+5.
+
+    Definition: 
+
+    The .charAt() method in JavaScript is used to get the character at a specific index in a string.
+
+    index: 
+
+    The position (starting from 0) of the character you want to retrieve.
+
+    Returns:
+
+    A string containing the character at the specified index.
+    If the index is out of range, it returns an empty string ("").
+
+    ✅ Tip:
+
+    You can also use bracket notation to get a character:
+
+
+6.
+
+    Definition:
+
+    The indexOf() method is used to find the first occurrence of a specified value in a string or array.
+
+    🔍 Parameters:
+    searchValue / searchElement: The value you want to find.
+
+    startIndex / fromIndex (optional): The position to start the search from (default is 0).
+
+    🔁 Returns:
+
+    The first index where the value is found.
+    Returns -1 if the value is not found.
+
+    📝 Notes:
+
+    It is case-sensitive in strings.
+    Searches from left to right.
+    Use .lastIndexOf() to find the last occurrence.
+
+
+     _________________________________________________________________________
+    | **Feature**            | **Description**                                |
+    | ---------------------- | ---------------------------------------------- |
+    | **Method Name**        | `indexOf()`                                    |
+    | **Applies To**         | `String`, `Array`                              |
+    | **Purpose**            | Finds the **first index** of a specified value |
+    | **Case Sensitivity**   | Yes (for strings)                              |
+    | **Search Direction**   | Left to right                                  |
+    | **Return Value**       | Index of the first match, or `-1` if not found |
+    | **Optional Parameter** | Starting index (`startIndex` or `fromIndex`)   |
+     ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+
+     _______________________________________________________________________________________________
+    | **Context** | **Syntax**                          | **Example**                  | **Output** |
+    | ----------- | ----------------------------------- | ---------------------------- | ---------- |
+    | String      | `string.indexOf(value, startIndex)` | `"hello".indexOf("e")`       | `1`        |
+    |             |                                     | `"hello".indexOf("l", 3)`    | `3`        |
+    | Array       | `array.indexOf(value, fromIndex)`   | `[1, 2, 3, 2].indexOf(2)`    | `1`        |
+    |             |                                     | `[1, 2, 3, 2].indexOf(2, 2)` | `3`        |
+
+
+7.
+
+    Definition: 
+    
+    The substring() method is used to extract a portion of a string between two specified indices (positions), and returns it as a new string without modifying the original string.
+    
+    startIndex: 
+    
+    The position to start extracting (inclusive).
+    
+    endIndex (optional): 
+    
+    The position to stop extracting (exclusive). If omitted, extracts to the end of the string.
+    
+    
+    If startIndex > endIndex, JavaScript swaps them automatically.
+    Negative values are treated as 0.
+
+
+8.
+
+    Definition: 
+
+    The .slice() method is used to extract a portion of an array or string without modifying the original.
+
+    start: Index to start slicing (inclusive).
+    end (optional): Index to stop slicing (exclusive).
+    Returns a new array with the selected elements.
+
+    ✅ Key Points: 
+
+    Non-destructive: Doesn't change the original array or string.
+    Negative indices count from the end.
+
+     _________________________________________________________________________________________________________________
+    | Feature                      | `.slice()`                        | `.substring()`                               |
+    | ---------------------------- | --------------------------------- | -------------------------------------------- |
+    | **Purpose**                  | Extracts part of a string         | Extracts part of a string                    |
+    | **Syntax**                   | `str.slice(start, end)`           | `str.substring(start, end)`                  |
+    | **Negative Indexes**         | ✅ **Allowed** (counts from end)  | ❌ **Not allowed** (treated as 0)           |
+    | **Start > End Handling**     | ✅ Works (reverses if needed)     | ✅ **Swaps** start and end automatically    |
+    | **Returns**                  | A new substring                   | A new substring                              |
+    | **Original String Changed?** | ❌ No                             | ❌ No                                       |
+     ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+
+     🧠 Summary
+
+    Use .slice() when you want to work with negative indexes or prefer strict behavior.
+    Use .substring() when you want it to auto-correct swapped indices but don’t need negative indexing.
+
+
+9.
+
+    Definition: 
+
+    The .trim() method is used to remove whitespace from both ends of a string. It does not modify the original string, but instead returns a new trimmed string.
+
+    📌 What it removes
+
+    Spaces (" ")
+    Tabs ("\t")
+    Newlines ("\n")
+    Other whitespace characters (Unicode spaces)
+
+    ❗Note
+
+    It does not remove spaces inside the string.
+    If the string has only whitespace, it returns an empty string.
+
+
+10.
+
+    Definition: 
+
+    The .replace() method in JavaScript is used to replace part of a string with another string.
+
+
+     _________________________________________________________________________
+    | Parameter     | Description                                             |
+    | ------------- | ------------------------------------------------------- |
+    | `searchValue` | The value (string or regular expression) to search for. |
+    | `newValue`    | The value to replace the match with.                    |
+     ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+
+
+    Returns:
+
+    A new string with the first match replaced.
+    ✅ Original string is not modified.
+
+    ✅ Tip:
+
+    To replace all occurrences of a string without using RegExp, use .replaceAll():
+
+    10.1 - https://www.youtube.com/playlist?list=PLu71SKxNbfoBuX3f4EOACle2y%20tRC5Q37  // ✕ ❎
+    10.2 - https://www.youtube.com/playlist?list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37    // ✓ ✅

@@ -1,0 +1,367 @@
+1.
+
+    Types of Strings: 
+
+    .toDateString
+    .toISOString
+    .toJSON
+    .toLocaleDateString
+    .toLocaleString
+    .toLocaleTimeString
+    .toString
+    .toTimeString
+    .toUTCString
+
+
+2.
+
+    Definition: 
+
+
+    In JavaScript, the .toString() method when called on a Date object returns a string that represents the Date in a human-readable format.
+
+    Key Points: 
+
+    Converts the Date object to a readable string.
+    The format typically looks like:
+    "Day Month Date Year HH:MM:SS GMT+Timezone (Time Zone Name)"
+    It is automatically called when you try to display a Date object as a string, like in console.log(date).
+
+
+3.
+
+    Definition: 
+
+    The .toDateString() method is used to convert a JavaScript Date object into a human-readable date string format, without the time portion.
+
+    Return Value: 
+
+    Returns a string representing the date portion of the Date object:
+
+    Key Points: 
+
+    Displays only the date, excluding time.
+    Format: "Day Mon Date Year"
+    Useful for readable date output.
+
+
+4.
+
+    Definition: 
+
+    The .toLocaleString() method of a Date object returns a string with a language-sensitive representation of the date and time.
+    It allows you to format the date and time according to different locales (languages and regions) and provides options to customize the format.
+
+    locales (optional): A string (like 'en-US', 'hi-IN') or array of locale strings.
+    options (optional): An object to customize the date and time format (like { weekday: 'long', year: 'numeric' }).
+
+    Key Points: 
+
+    Locale-sensitive formatting.
+    Supports customization (date style, time style, calendar, numbering system, etc.).
+    Great for building internationalized applications.
+
+
+5. typeof(only for Learning){Skipped}
+
+
+6. Inserting a Date(toDateString)
+
+    Months: 
+
+    0: January                                           6:  July
+    1: February                                          7:  August
+    2: March                                             8:  September
+    3: April                                             9:  October
+    4: May                                               10: November
+    5: June                                              11: December
+
+
+    Dates: 
+
+    0: 1-                   8: 8                     16: 16                   24: 24         |         How much
+    1: 1                    9: 9                     17: 17                   25: 25         |         more than
+    2: 2                    10: 10                   18: 18                   26: 26         |         31 so 
+    3: 3                    11: 11                   19: 19                   27: 27         |         add
+    4: 4                    12: 12                   20: 20                   28: 28         |         One / 1+
+    5: 5                    13: 13                   21: 21                   29: 29         |         to the
+    6: 6                    14: 14                   22: 22                   30: 30         |         Number given
+    7: 7                    15: 15                   23: 23                   31: 31         |
+
+    Years(Any){0 - ∞ / Zero to Infinite}
+
+
+7. 
+
+    Date{
+        Year: number
+        MonthIndex: number
+        Date: number
+        Hours: number
+        Minutes: number
+        Seconds: number
+        MilliSecond: number
+    }: Date Must be supplied if minutes is supplied. A number from 0 to 23 (midnight to 11pm) that specifies the hour.Creates a new Date.
+
+
+8. Inserting a String Date(DD : MM : YYYY)  {Only for Learning}[Skipped]
+
+
+9. (Only for Learning){Skipped}
+
+
+10.
+
+    Definition:
+
+    The .getTime() method is used with JavaScript Date objects to return the number of milliseconds that have passed since January 1, 1970, 00:00:00 UTC (also known as the Unix Epoch).
+
+    Returns: 
+
+    A number representing the time value in milliseconds since the Unix Epoch.
+
+
+    Key Points: 
+
+    .getTime() is commonly used to compare dates or to measure time intervals.
+    Useful when you need the exact time representation of a date.
+    The result is the same as Date.now() if called on the current date.
+
+    10.1. Getting a time by Dividing(Only for Learning){Skipped}
+
+
+11. 📅 JavaScript Date Methods
+
+    Meanings: 
+
+    .getDate
+    .getDay
+    .getFullYear
+    .getHours
+    .getMilliseconds
+    .getMinutes
+    .getMonth
+    .getSeconds
+    .getTime
+    .getTimezoneOffset
+    .getUTCDate
+    .getUTCDay
+    .getUTCFullYear
+    .getUTCHours
+    .getUTCMilliseconds
+    .getUTCMinutes
+    .getUTCMonth
+    .getUTCSeconds
+    .getVarDate
+
+
+    1. getDate()
+
+    Definition: 
+
+    Returns the day of the month (1-31) for the specified date.
+
+
+    2. getDay()
+
+    Definition: 
+
+    Returns the day of the week (0-6) for the specified date, where 0 is Sunday and 6 is Saturday.
+
+
+    3. getFullYear()
+
+    Definition: 
+
+    Returns the four-digit year of the specified date.
+
+
+    4. getHours()
+
+    Definition: 
+
+    Returns the hour (0-23) of the specified date.
+
+
+    5. getMilliseconds()
+
+    Definition: 
+
+    Returns the milliseconds (0-999) of the specified date.
+
+
+    6. getMinutes()
+
+    Definition: 
+
+    Returns the minutes (0-59) of the specified date.
+
+
+    7. getMonth()
+
+    Definition: 
+
+    Returns the month (0-11) of the specified date, where 0 is January and 11 is December.
+
+
+    8. getSeconds()
+
+    Definition: 
+
+    Returns the seconds (0-59) of the specified date.
+
+
+    9. getTime()
+
+    Definition: 
+
+    Returns the timestamp (the number of milliseconds since January 1, 1970, 00:00:00 UTC).
+
+
+    10. getTimezoneOffset()
+
+    Definition: 
+
+    Returns the difference, in minutes, between UTC time and local time.
+
+
+    11. getUTCDate()
+
+    Definition: 
+
+    Returns the day of the month (1-31) in UTC.
+
+
+    12. getUTCDay()
+
+    Definition: 
+
+    Returns the day of the week (0-6) in UTC.
+
+
+    13. getUTCFullYear()
+
+    Definition: 
+
+    Returns the four-digit year in UTC.
+
+
+    14. getUTCHours()
+
+    Definition: 
+
+    Returns the hour (0-23) in UTC.
+
+
+    15. getUTCMilliseconds()
+
+    Definition: 
+
+    Returns the milliseconds (0-999) in UTC.
+
+
+    16. getUTCMinutes()
+
+    Definition: 
+
+    Returns the minutes (0-59) in UTC.
+
+
+    17. getUTCMonth()
+
+    Definition: 
+
+    Returns the month (0-11) in UTC, where 0 is January and 11 is December.
+
+
+    18. getUTCSeconds()
+
+    Definition: 
+
+    Returns the seconds (0-59) in UTC.
+
+
+    19. getVarDate() (❌ Non-Standard / Obsolete)
+
+    Definition: 
+
+    This method is specific to JScript (Internet Explorer) and is not part of modern JavaScript standards. It returns a VT_DATE value.
+
+    Status: Obsolete — do not use in modern web development.
+
+     __________________________________________________________________
+    | Method               | Returns                      | Time Zone  |
+    | -------------------- | ---------------------------- | ---------- |
+    | getDate()            | Day of the month (1-31)      | Local      |
+    | getDay()             | Day of the week (0-6)        | Local      |
+    | getFullYear()        | Full year (4 digits)         | Local      |
+    | getHours()           | Hours (0-23)                 | Local      |
+    | getMilliseconds()    | Milliseconds (0-999)         | Local      |
+    | getMinutes()         | Minutes (0-59)               | Local      |
+    | getMonth()           | Month (0-11)                 | Local      |
+    | getSeconds()         | Seconds (0-59)               | Local      |
+    | getTime()            | Timestamp (ms since 1970)    | N/A        |
+    | getTimezoneOffset()  | Offset from UTC (in minutes) | N/A        |
+    | getUTCDate()         | Day of the month (1-31)      | UTC        |
+    | getUTCDay()          | Day of the week (0-6)        | UTC        |
+    | getUTCFullYear()     | Full year (4 digits)         | UTC        |
+    | getUTCHours()        | Hours (0-23)                 | UTC        |
+    | getUTCMilliseconds() | Milliseconds (0-999)         | UTC        |
+    | getUTCMinutes()      | Minutes (0-59)               | UTC        |
+    | getUTCMonth()        | Month (0-11)                 | UTC        |
+    | getUTCSeconds()      | Seconds (0-59)               | UTC        |
+    | getVarDate()         | Obsolete JScript Method      | Deprecated |
+     ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+
+
+12.
+
+calendar
+dateStyle
+day
+dayPeriod
+era
+formatMatcher
+fractionalSecondDigits
+hour
+hour12
+hourCycle
+localeMatcher
+minute
+month
+numberingSystem
+second
+timestyle
+timeZone
+timeZoneName
+weekday
+year
+
+#endregion
+#region
+async arrow function
+async function
+class
+ctor
+dowhile
+error
+for
+forawaitof
+foreach
+forin
+forof
+function
+if
+ifelse
+import
+log
+method
+new
+newpromise
+setinterval
+settimeout
+switch
+throw
+trycatch
+warn
+while

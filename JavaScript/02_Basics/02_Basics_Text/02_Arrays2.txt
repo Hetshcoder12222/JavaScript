@@ -1,0 +1,106 @@
+1.
+
+    Definition:
+
+    The .concat() method is used to merge two or more arrays. It does not change the existing arrays, but instead returns a new array that combines the values of the original arrays.
+
+    Parameters:
+
+    Arrays (or values) to concatenate with the original array.
+
+    Returns: 
+
+    A new array that includes elements from the original array and all additional arrays or values.
+
+
+    Key Points:
+
+    It does not modify the original arrays.
+    You can also concatenate values directly:
+
+
+2.
+
+    Definition: 
+
+    The .flat() method is used to flatten nested arrays in JavaScript, meaning it reduces the depth of nested arrays into a single array up to a specified depth.
+
+    Parameters: 
+
+    depth (optional):
+    An integer specifying how deep a nested array structure should be flattened.
+
+    Returns: 
+
+    A new array with the sub-array elements concatenated into it recursively up to the specified depth.
+
+    Key Points: 
+
+    Non-nested arrays remain unchanged.
+    .flat(Infinity) can be used to completely flatten an array regardless of depth.
+    It does not mutate the original array.
+
+
+3.
+
+    Definition:
+
+    The Array.isArray() method is used to determine whether a given value is an array.
+    It returns true if the value is an array; otherwise, it returns false.
+
+    Parameter: value → The value to be checked.
+    Returns: true if the value is an array, false otherwise.
+
+    Key Notes: 
+
+    It is the most reliable way to check for arrays in JavaScript.
+    Prefer it over typeof, because typeof an array returns "object", which is not specific.
+    Useful to distinguish arrays from other objects.
+
+
+4.
+
+    Definition: 
+
+    Array.from() creates a new, shallow-copied array instance from an array-like or iterable object.
+
+    Parameters: 
+
+    arrayLike:
+    An array-like or iterable object to convert to an array.
+
+    mapFunction (Optional):
+    A function to call on every element of the array.
+
+    thisArg (Optional):
+    A value to use as this when executing the mapFunction.
+
+    Key Points: 
+
+    Array.from() is useful for converting:
+    Strings → Array of characters
+    Set → Array
+    Map → Array
+    Arguments object → Array
+    NodeLists (DOM) → Array
+    It creates a new array and does not mutate the original iterable.
+    It can apply a transformation during array creation with the optional mapping function.
+
+
+5.
+
+    Definition: 
+
+    The .of method is a static method available on certain JavaScript constructors like Array and Set.
+
+    Purpose:
+
+    Creates a new array instance from the provided arguments, regardless of the number or type of arguments.
+
+    Notes: 
+
+    .of is mainly useful to avoid the special case of the Array constructor when passing a single number.
+    Similar .of methods also exist for other objects, like Set.of in some proposals (not fully standardized yet).
+
+
+6. Intresting Interviews Case Question(Only for Interviews){Skipped}
