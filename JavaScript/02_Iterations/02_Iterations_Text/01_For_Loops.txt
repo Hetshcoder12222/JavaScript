@@ -1,0 +1,10 @@
+for ([         ]; [         ]; [         ])
+         ⬆️           ⬆️          ⬆️
+   initialization  condition   increament
+                               /decreament
+
+for ([]; []; []) {
+    ~~~~~~~~~~~~~~ ⬅️↖️
+    ~~~~~~~~~~~~~~ ⬅️⬅️ Body of the "For Loop"
+    ~~~~~~~~~~~~~~ ⬅️↙️
+}
